@@ -33,4 +33,6 @@ private:
 	float CrossHairXLoxation = 0.5f;
 	UPROPERTY(EditAnywhere)
 	float CrossHairYLoxation = 0.33333f;
+
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
 };
