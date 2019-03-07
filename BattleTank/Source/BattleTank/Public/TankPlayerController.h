@@ -28,4 +28,9 @@ private:
 
 	// Return an OUT parameter, true if hit landscape
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
+
+	UPROPERTY(EditAnywhere)
+	float CrossHairXLoxation = 0.5f;
+	UPROPERTY(EditAnywhere)
+	float CrossHairYLoxation = 0.33333f;
 };
