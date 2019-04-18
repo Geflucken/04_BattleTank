@@ -38,5 +38,5 @@ protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;
 
 	UPROPERTY(EditAnywhere, Category = Firing)
-		float LaunchSpeed = 100000; // TODO Find a sensible default
+		float LaunchSpeed = 4000;
 };
