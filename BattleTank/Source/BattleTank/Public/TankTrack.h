@@ -20,5 +20,5 @@ public:
 
 	// Max force per track, in Newtons
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float TrackMaxDrivingForce = 60000000; // Assume 40 tonne tank and 1G acceleration
+	float TrackMaxDrivingForce = 45000000; // Assume 40 tonne tank and 1G acceleration
 };
