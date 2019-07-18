@@ -62,7 +62,8 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float LaunchSpeed = 4000;
 	
+	FVector AimDirection;
 	
-	void MoveBarrelTowards(FVector AimDirection);
-	
+	void MoveBarrelTowards();
+	bool IsBarrelMoving();
 };
