@@ -21,4 +21,9 @@ public:
 	// Max force per track, in Newtons
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TrackMaxDrivingForce = 45000000; // Assume 40 tonne tank and 1G acceleration
+
+private:
+	UTankTrack();
+
+	void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 };
