@@ -15,6 +15,10 @@ class BATTLETANK_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
 
+public:
+
+	virtual void Tick(float DeltaTime) override;
+
 
 protected:
 
@@ -25,10 +29,8 @@ protected:
 private:
 	void BeginPlay() override;
 
-	
+	virtual void SetPawn(APawn* InPawn) override;
 
-public:
-
-	virtual void Tick(float DeltaTime) override;
-
+	UFUNCTION()
+	void OnPossessedTankDeath();
 };
