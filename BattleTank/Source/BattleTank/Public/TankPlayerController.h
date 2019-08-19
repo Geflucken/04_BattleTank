@@ -17,12 +17,16 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 public:	
 
 	virtual void BeginPlay() override;
+	void SetPawn(APawn * InPawn);
 	virtual void Tick(float DeltaTime) override;
 
 protected:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
 	void FoundAimingComponent(UTankAimingComponent* AimCompRef);
+
+	UFUNCTION()
+	void OnPossessedTankDeath();
 
 private: 
 	// Start the tank moving the barrel so that a shot would hit where 
